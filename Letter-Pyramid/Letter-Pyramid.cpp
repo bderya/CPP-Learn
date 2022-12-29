@@ -9,11 +9,19 @@ int main()
     string str;
 	cout<<"Please Enter Value so it will be create Pyramid"<<endl;
 
-	
     getline(cin,str);
+	
     int row = str.size();
     int column = row *2 -1;
     int printer_str = row;
+    int star = 0;
+    
+    if (row % 2 == 0)
+        star = row/2;
+    else
+        star = (row + 1) / 2;
+    
+    cout<<string(star,'*')<<"Creating"<<string(star,'*')<<endl;
     
     for(int i = 0; i < row; i++)
     {
