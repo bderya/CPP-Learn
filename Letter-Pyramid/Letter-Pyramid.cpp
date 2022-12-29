@@ -7,8 +7,8 @@ using namespace std;
 int main()
 {
     string str;
-    
 	cout<<"Please Enter Value so it will be create Pyramid"<<endl;
+
 	
     getline(cin,str);
     int row = str.size();
